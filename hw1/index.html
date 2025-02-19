@@ -34,7 +34,8 @@
 
 		<br>
 
-		Link to webpage: (TODO) <a href="https://cs184.eecs.berkeley.edu/sp25">cs184.eecs.berkeley.edu/sp25</a>
+		Link to webpage: <a
+			href="https://cal-cs184-student.github.io/hw-webpages-drop-table-students/">https://cal-cs184-student.github.io/hw-webpages-drop-table-students/</a>
 
 		<br>
 
@@ -156,6 +157,38 @@
 			positive-negative-or-zero aspect of the number, which is greatly appreciated! This optimization cuts the
 			rendering time by approximately 10%.
 		</p>
+
+		<p style="text-align: center; font-weight: bold;">Average Rendering Time for 500 01_degenerate_square1.svg</p>
+		<div style="display: flex; justify-content: center;">
+			<table style="width: 50%; border-collapse: collapse;">
+				<thead>
+					<tr>
+						<th style="border: 1px solid black; padding: 8px; text-align: center;">Optimization</th>
+						<th style="border: 1px solid black; padding: 8px; text-align: center;">Time (ms)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">No Optimization</td>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">104.612</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">Optimizing out
+							floating-point
+							multiplications</td>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">102.944</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">Line Skip Algorithm</td>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">83.47</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">Both</td>
+						<td style="border: 1px solid black; padding: 8px; text-align: center;">78.834</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
 
 		<!-- <p>Here is an example 2x2 gridlike structure using an HTML table. Each <b>tr</b> is a row and each <b>td</b> is
